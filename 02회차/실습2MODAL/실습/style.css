@@ -1,0 +1,52 @@
+body,
+h1 {
+  margin: 0;
+}
+
+/*
+	3. body에 백그라운드 이미지를 붙여주세요.
+	서체는 arial, 서체 크기는 0.9em
+
+	4. 버튼요소를 꾸며주세요.
+
+	5. 버튼Hover시를 꾸며주세요.
+
+	6. 팝업창을 만들어주세요.
+
+	7. .window.open일때의 css를 작성하세요.
+*/
+body {
+	background-image: url('bg.png');
+	font-family: arial;
+	font-size: 0.9em;
+}
+.modal {
+width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(0,0,0,0.1); /* ✅ 글자만 흐리게 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  left: 300px;
+  top: 350px;
+}
+.modal:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.modal-img {
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+ 
+}
