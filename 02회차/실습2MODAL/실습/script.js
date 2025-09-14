@@ -9,3 +9,8 @@ $(".yes, .no").on("click", function () {
   // .window에 .open이라는 class가 삭제
   $(".window").removeClass("open");
 });
+$(document).ready(function(){
+  $(".modal").click(function(){
+    $(".modal-popup").toggleClass("open");
+  });
+});

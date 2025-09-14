@@ -45,12 +45,72 @@ width: 250px;
   letter-spacing: 2px;
 
 }
-img {
+  
+
+/* 팝업 */
+.modal-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%); /* 처음은 위로 숨김 */
   width: 500px;
-  height: 300px;
-  position: absolute;
-  bottom: -500px;
-  left: 250px;
-  transform: rotateX('360deg');
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* 열렸을 때 */
+.modal-popup.open {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+/* 제목 */
+.modal-popup h1 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+}
+
+/* 이미지 */
+.modal-popup img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 버튼 영역 */
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: 1px solid orange;
+  background: transparent;
+  color: orange;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button:hover {
+  background: orange;
+  color: black;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
