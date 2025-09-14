@@ -43,10 +43,14 @@ width: 250px;
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 2px;
+
 }
-.modal-img {
-  width: 400px;
-  height: 200px;
-  border: 2px solid black;
- 
+img {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  bottom: -500px;
+  left: 250px;
+  transform: rotateX('360deg');
 }
+
